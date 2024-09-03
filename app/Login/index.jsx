@@ -2,18 +2,49 @@ import { useState } from "react";
 import { View, Text, TextInput, Pressable, StyleSheet, SafeAreaView } from "react-native";
 
 const style = StyleSheet.create({
-    input: {
-        width: '80%',
-        margin: 10,
-        backgroundColor: 'grey',
-        borderRadius: '15px',
-        alignItems: 'center',
-        textAlign: 'center',
-
+    input:{
+        backgroundColor:'grey',
+        padding:'15px',
+        margin:'20px',
+        width:'300px',
+        borderRadius:'15px',
+        
     },
-    container: {
-        alignItems: 'center'
+    body:{
+        display: 'flex',
+        justifyContent:'center',
+        alignItems:'center',
+    },
+    botaotexto:{
+        borderRadius:'15px',
+        margin:"30px",
+        backgroundColor: 'black',
+        width:'300px',
+        color:'white',
+        padding:"5px",
+        fontWeight:'bold',
+    },
+    texto:{
+        color:'white',
+        textAlign:'center',
+    },
+    botao:{
+        borderRadius:'90px',
+        margin:"30px",
+        backgroundColor: 'black',
+        width:'300px',
+        color:'white',
+        padding:"20px",
+        fontWeight:'bold',
+    },
+    textoBotao:{
+        color:"white",
+        alignItems:'center'
+
     }
+
+    
+    
 
 })
 
@@ -49,11 +80,11 @@ export default SinUp = () => {
 
 
 return (
-    <SafeAreaView>
-        <View>
-            <Text>Registre-se</Text>
+    <SafeAreaView style={style.body}>
+        <View style={style.botaotexto}>
+            <Text style={style.texto}>Registre-se</Text>
         </View>
-        <View>
+        <View>  
             <TextInput
                 style={style.input}
                 onChangeText={(text) => setEmail(text)}
@@ -73,9 +104,9 @@ return (
                 secureTextEntry={true}
             />
 
-            <View>
+           <View style={style.botao}>
                 <Pressable onPress={registrarUsuario}>
-                    <Text>Cadastrar</Text>
+                    <Text style={style.textoBotao}>Cadastrar</Text>
                 </Pressable>
             </View>
 
