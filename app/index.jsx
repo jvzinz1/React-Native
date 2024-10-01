@@ -13,6 +13,7 @@ export default function Page() {
             <Link href="/Pokemon" style={styles.link}>- Pokémon</Link>
             <Link href="/Login" style={styles.link}>- Login</Link>
             <Link href="/Ifome" style={styles.link}>- Ifome</Link>
+            <Link href="/Navigation" style={styles.link}>- Navigation</Link>
             </View>
         </View>
     );
