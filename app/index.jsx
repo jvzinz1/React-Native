@@ -14,6 +14,8 @@ export default function Page() {
             <Link href="/Login" style={styles.link}>- Login</Link>
             <Link href="/Ifome" style={styles.link}>- Ifome</Link>
             <Link href="/Navigation" style={styles.link}>- Navigation</Link>
+            <Link href="/Camera" style={styles.link}>- Camera</Link>
+            <Link href="/ImagePicker" style={styles.link}>- ImagePicker</Link>
             </View>
         </View>
     );
